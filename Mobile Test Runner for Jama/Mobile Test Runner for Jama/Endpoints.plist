@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Delete</key>
+	<string></string>
+	<key>Patch</key>
+	<dict/>
+	<key>Put</key>
+	<dict>
+		<key>TestRuns</key>
+		<string>jamacloud.com/rest/latest/testruns/{id}</string>
+	</dict>
+	<key>Get</key>
+	<dict>
+		<key>TestRuns</key>
+		<string>jamacloud.com/rest/latest/testruns?testCycle={testCycleId}</string>
+		<key>TestCycles</key>
+		<string>jamacloud.com/rest/latest/testplans/{planId}/testcycles</string>
+		<key>TestPlans</key>
+		<string>jamacloud.com/rest/latest/testplans?project={projectId}</string>
+		<key>Projects</key>
+		<string>jamacloud.com/rest/latest/projects</string>
+		<key>CurrentUser</key>
+		<string>jamacloud.com/rest/latest/users/current</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		130BFF8E1F36C3B2005F1660 /* TestRunIndexViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130BFF8D1F36C3B2005F1660 /* TestRunIndexViewControllerUnitTests.swift */; };
+		133971BB1F1B460F00AB9D30 /* ProjectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133971BA1F1B460F00AB9D30 /* ProjectCollectionViewCell.swift */; };
+		133971C31F2C326700AB9D30 /* TestStepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133971C21F2C326700AB9D30 /* TestStepTableViewCell.swift */; };
+		1379B5141F3D8502004E7231 /* small_down_chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 1379B5121F3D8502004E7231 /* small_down_chevron.png */; };
+		1379B5151F3D8502004E7231 /* small_right_chevron.png in Resources */ = {isa = PBXBuildFile; fileRef = 1379B5131F3D8502004E7231 /* small_right_chevron.png */; };
+		1379B5171F414E74004E7231 /* TestListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379B5161F414E74004E7231 /* TestListTableViewCell.swift */; };
+		13A342EF1F0367E9002EBC92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A342EE1F0367E9002EBC92 /* AppDelegate.swift */; };
+		13A342F41F0367E9002EBC92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A342F21F0367E9002EBC92 /* Main.storyboard */; };
+		13A342F61F0367E9002EBC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A342F51F0367E9002EBC92 /* Assets.xcassets */; };
+		13A342F91F0367E9002EBC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A342F71F0367E9002EBC92 /* LaunchScreen.storyboard */; };
+		13A343221F04C247002EBC92 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343211F04C247002EBC92 /* LoginViewController.swift */; };
+		13A343241F04C271002EBC92 /* ProjectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343231F04C271002EBC92 /* ProjectListViewController.swift */; };
+		13A343261F04C28F002EBC92 /* TestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343251F04C28F002EBC92 /* TestListViewController.swift */; };
+		13A343281F04C2B4002EBC92 /* TestStepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343271F04C2B4002EBC92 /* TestStepViewController.swift */; };
+		13A3432C1F04C33F002EBC92 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3432B1F04C33F002EBC92 /* UserModel.swift */; };
+		13A3432E1F04C369002EBC92 /* ProjectListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3432D1F04C369002EBC92 /* ProjectListModel.swift */; };
+		13A343301F04C379002EBC92 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3432F1F04C379002EBC92 /* ProjectModel.swift */; };
+		13A343321F04C396002EBC92 /* TestRunListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343311F04C396002EBC92 /* TestRunListModel.swift */; };
+		13A343341F04C3B3002EBC92 /* TestRunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343331F04C3B3002EBC92 /* TestRunModel.swift */; };
+		13A343361F04C3EF002EBC92 /* TestStepModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343351F04C3EF002EBC92 /* TestStepModel.swift */; };
+		13A343381F04C442002EBC92 /* TestPlanListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343371F04C442002EBC92 /* TestPlanListModel.swift */; };
+		13A3433A1F04C454002EBC92 /* TestPlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343391F04C454002EBC92 /* TestPlanModel.swift */; };
+		13A3433C1F04C48E002EBC92 /* TestCycleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3433B1F04C48E002EBC92 /* TestCycleListModel.swift */; };
+		13A3433E1F04C49F002EBC92 /* TestCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3433D1F04C49F002EBC92 /* TestCycleModel.swift */; };
+		13A343401F04C564002EBC92 /* RestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3433F1F04C564002EBC92 /* RestHelper.swift */; };
+		13A343421F04C752002EBC92 /* UserModelUnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343411F04C752002EBC92 /* UserModelUnitTest.swift */; };
+		13A343441F04C77A002EBC92 /* ProjectListModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343431F04C77A002EBC92 /* ProjectListModelUnitTests.swift */; };
+		13A343461F04C78F002EBC92 /* ProjectModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343451F04C78F002EBC92 /* ProjectModelUnitTests.swift */; };
+		13A343481F04C7A9002EBC92 /* TestRunListModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343471F04C7A9002EBC92 /* TestRunListModelUnitTests.swift */; };
+		13A3434A1F04C7BE002EBC92 /* TestRunModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343491F04C7BE002EBC92 /* TestRunModelUnitTests.swift */; };
+		13A3434C1F04C7DE002EBC92 /* TestStepModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3434B1F04C7DE002EBC92 /* TestStepModelUnitTests.swift */; };
+		13A3434E1F04C814002EBC92 /* TestPlanListModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3434D1F04C814002EBC92 /* TestPlanListModelUnitTests.swift */; };
+		13A343501F04C82C002EBC92 /* TestPlanModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3434F1F04C82C002EBC92 /* TestPlanModelUnitTests.swift */; };
+		13A343521F04C84B002EBC92 /* TestCycleListModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343511F04C84B002EBC92 /* TestCycleListModelUnitTests.swift */; };
+		13A343541F04C867002EBC92 /* TestCycleModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343531F04C867002EBC92 /* TestCycleModelUnitTests.swift */; };
+		13A343561F04C881002EBC92 /* RestHelperUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343551F04C881002EBC92 /* RestHelperUnitTests.swift */; };
+		13A3435B1F04C96B002EBC92 /* LoginViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3435A1F04C96B002EBC92 /* LoginViewControllerUnitTests.swift */; };
+		13A3435D1F04CA1E002EBC92 /* ProjectListViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3435C1F04CA1E002EBC92 /* ProjectListViewControllerUnitTests.swift */; };
+		13A3435F1F04CA38002EBC92 /* TestListViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A3435E1F04CA38002EBC92 /* TestListViewControllerUnitTests.swift */; };
+		13A343611F04CA59002EBC92 /* TestStepViewControllerUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A343601F04CA59002EBC92 /* TestStepViewControllerUnitTests.swift */; };
+		13A343B11F0F5C6E002EBC92 /* Endpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13A343B01F0F5C6E002EBC92 /* Endpoints.plist */; };
+		303AD4651F2994F5000E3988 /* LoginViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303AD4641F2994F5000E3988 /* LoginViewControllerUITests.swift */; };
+		309325751F32E1C700561EC4 /* mtrlogo_v8-1.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B974361F312092007BE00E /* mtrlogo_v8-1.png */; };
+		4D15D7D81F2A802F009A26B8 /* TestRunIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D15D7D71F2A802F009A26B8 /* TestRunIndexViewController.swift */; };
+		908CE85E1F32744800042C1E /* check_icon_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 908CE85B1F32744800042C1E /* check_icon_green.png */; };
+		908CE8601F32744800042C1E /* X_icon_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 908CE85D1F32744800042C1E /* X_icon_red.png */; };
+		908CE8621F3274EE00042C1E /* empty_icon_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 908CE8611F3274EE00042C1E /* empty_icon_grey.png */; };
+		90D1E2391F0D787F00D66830 /* MaxTextLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D1E2381F0D787F00D66830 /* MaxTextLength.swift */; };
+		E247FFBE1F206FB500E2A65C /* folder-lightbl-redx.png in Resources */ = {isa = PBXBuildFile; fileRef = E247FFBD1F206FB500E2A65C /* folder-lightbl-redx.png */; };
+		E2840AED1F3E9C1B00559EF1 /* NOTES.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AEA1F3E9C1B00559EF1 /* NOTES.png */; };
+		E2840AEE1F3E9C1B00559EF1 /* PASS.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AEB1F3E9C1B00559EF1 /* PASS.png */; };
+		E2840AF41F3EA2B800559EF1 /* PHOTO.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AF31F3EA2B800559EF1 /* PHOTO.png */; };
+		E2840AFA1F3ECC8200559EF1 /* UPLOAD.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AF91F3ECC8200559EF1 /* UPLOAD.png */; };
+		E2840AFC1F3ED3E900559EF1 /* BLOCK.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AFB1F3ED3E900559EF1 /* BLOCK.png */; };
+		E2840AFE1F3ED3ED00559EF1 /* FAIL.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840AFD1F3ED3ED00559EF1 /* FAIL.png */; };
+		E2840B061F3F98E900559EF1 /* FAIL_UNSELECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840B051F3F98E900559EF1 /* FAIL_UNSELECTED.png */; };
+		E2840B081F3F98F100559EF1 /* PASS_UNSELECTED.png in Resources */ = {isa = PBXBuildFile; fileRef = E2840B071F3F98F100559EF1 /* PASS_UNSELECTED.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13A343001F0367E9002EBC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13A342E31F0367E9002EBC92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A342EA1F0367E9002EBC92;
+			remoteInfo = "Mobile Test Runner for Jama";
+		};
+		13A3430B1F0367E9002EBC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13A342E31F0367E9002EBC92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13A342EA1F0367E9002EBC92;
+			remoteInfo = "Mobile Test Runner for Jama";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		130BFF8D1F36C3B2005F1660 /* TestRunIndexViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunIndexViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		133971BA1F1B460F00AB9D30 /* ProjectCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCollectionViewCell.swift; sourceTree = "<group>"; };
+		133971C21F2C326700AB9D30 /* TestStepTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStepTableViewCell.swift; sourceTree = "<group>"; };
+		1379B5121F3D8502004E7231 /* small_down_chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_down_chevron.png; sourceTree = "<group>"; };
+		1379B5131F3D8502004E7231 /* small_right_chevron.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = small_right_chevron.png; sourceTree = "<group>"; };
+		1379B5161F414E74004E7231 /* TestListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListTableViewCell.swift; sourceTree = "<group>"; };
+		13A342EB1F0367E9002EBC92 /* Mobile Test Runner for Jama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobile Test Runner for Jama.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A342EE1F0367E9002EBC92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		13A342F31F0367E9002EBC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		13A342F51F0367E9002EBC92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13A342F81F0367E9002EBC92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		13A342FA1F0367E9002EBC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A342FF1F0367E9002EBC92 /* Mobile Test Runner for JamaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Test Runner for JamaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A343051F0367E9002EBC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A3430A1F0367E9002EBC92 /* Mobile Test Runner for JamaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobile Test Runner for JamaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A343101F0367E9002EBC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13A343211F04C247002EBC92 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		13A343231F04C271002EBC92 /* ProjectListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewController.swift; sourceTree = "<group>"; };
+		13A343251F04C28F002EBC92 /* TestListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListViewController.swift; sourceTree = "<group>"; };
+		13A343271F04C2B4002EBC92 /* TestStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStepViewController.swift; sourceTree = "<group>"; };
+		13A3432B1F04C33F002EBC92 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		13A3432D1F04C369002EBC92 /* ProjectListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListModel.swift; sourceTree = "<group>"; };
+		13A3432F1F04C379002EBC92 /* ProjectModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		13A343311F04C396002EBC92 /* TestRunListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunListModel.swift; sourceTree = "<group>"; };
+		13A343331F04C3B3002EBC92 /* TestRunModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunModel.swift; sourceTree = "<group>"; };
+		13A343351F04C3EF002EBC92 /* TestStepModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStepModel.swift; sourceTree = "<group>"; };
+		13A343371F04C442002EBC92 /* TestPlanListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlanListModel.swift; sourceTree = "<group>"; };
+		13A343391F04C454002EBC92 /* TestPlanModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlanModel.swift; sourceTree = "<group>"; };
+		13A3433B1F04C48E002EBC92 /* TestCycleListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCycleListModel.swift; sourceTree = "<group>"; };
+		13A3433D1F04C49F002EBC92 /* TestCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCycleModel.swift; sourceTree = "<group>"; };
+		13A3433F1F04C564002EBC92 /* RestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestHelper.swift; path = "Mobile Test Runner for Jama/RestHelper.swift"; sourceTree = SOURCE_ROOT; };
+		13A343411F04C752002EBC92 /* UserModelUnitTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModelUnitTest.swift; sourceTree = "<group>"; };
+		13A343431F04C77A002EBC92 /* ProjectListModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343451F04C78F002EBC92 /* ProjectModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343471F04C7A9002EBC92 /* TestRunListModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunListModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343491F04C7BE002EBC92 /* TestRunModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunModelUnitTests.swift; sourceTree = "<group>"; };
+		13A3434B1F04C7DE002EBC92 /* TestStepModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStepModelUnitTests.swift; sourceTree = "<group>"; };
+		13A3434D1F04C814002EBC92 /* TestPlanListModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlanListModelUnitTests.swift; sourceTree = "<group>"; };
+		13A3434F1F04C82C002EBC92 /* TestPlanModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPlanModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343511F04C84B002EBC92 /* TestCycleListModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCycleListModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343531F04C867002EBC92 /* TestCycleModelUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCycleModelUnitTests.swift; sourceTree = "<group>"; };
+		13A343551F04C881002EBC92 /* RestHelperUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestHelperUnitTests.swift; sourceTree = "<group>"; };
+		13A3435A1F04C96B002EBC92 /* LoginViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		13A3435C1F04CA1E002EBC92 /* ProjectListViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectListViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		13A3435E1F04CA38002EBC92 /* TestListViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestListViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		13A343601F04CA59002EBC92 /* TestStepViewControllerUnitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestStepViewControllerUnitTests.swift; sourceTree = "<group>"; };
+		13A343B01F0F5C6E002EBC92 /* Endpoints.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Endpoints.plist; sourceTree = "<group>"; };
+		303AD4641F2994F5000E3988 /* LoginViewControllerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerUITests.swift; sourceTree = "<group>"; };
+		4D15D7D71F2A802F009A26B8 /* TestRunIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRunIndexViewController.swift; sourceTree = "<group>"; };
+		908CE85B1F32744800042C1E /* check_icon_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check_icon_green.png; path = "Mobile Test Runner for Jama/check_icon_green.png"; sourceTree = SOURCE_ROOT; };
+		908CE85D1F32744800042C1E /* X_icon_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = X_icon_red.png; path = "Mobile Test Runner for Jama/X_icon_red.png"; sourceTree = SOURCE_ROOT; };
+		908CE8611F3274EE00042C1E /* empty_icon_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = empty_icon_grey.png; path = "Mobile Test Runner for Jama/empty_icon_grey.png"; sourceTree = SOURCE_ROOT; };
+		90D1E2381F0D787F00D66830 /* MaxTextLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxTextLength.swift; sourceTree = "<group>"; };
+		E247FFBD1F206FB500E2A65C /* folder-lightbl-redx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "folder-lightbl-redx.png"; sourceTree = "<group>"; };
+		E2840AEA1F3E9C1B00559EF1 /* NOTES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NOTES.png; sourceTree = "<group>"; };
+		E2840AEB1F3E9C1B00559EF1 /* PASS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASS.png; sourceTree = "<group>"; };
+		E2840AF31F3EA2B800559EF1 /* PHOTO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PHOTO.png; sourceTree = "<group>"; };
+		E2840AF91F3ECC8200559EF1 /* UPLOAD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UPLOAD.png; sourceTree = "<group>"; };
+		E2840AFB1F3ED3E900559EF1 /* BLOCK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BLOCK.png; sourceTree = "<group>"; };
+		E2840AFD1F3ED3ED00559EF1 /* FAIL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAIL.png; sourceTree = "<group>"; };
+		E2840B051F3F98E900559EF1 /* FAIL_UNSELECTED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FAIL_UNSELECTED.png; sourceTree = "<group>"; };
+		E2840B071F3F98F100559EF1 /* PASS_UNSELECTED.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PASS_UNSELECTED.png; sourceTree = "<group>"; };
+		E2B974361F312092007BE00E /* mtrlogo_v8-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mtrlogo_v8-1.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13A342E81F0367E9002EBC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A342FC1F0367E9002EBC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A343071F0367E9002EBC92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		133971B71F1B437600AB9D30 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1379B5121F3D8502004E7231 /* small_down_chevron.png */,
+				1379B5131F3D8502004E7231 /* small_right_chevron.png */,
+				908CE8611F3274EE00042C1E /* empty_icon_grey.png */,
+				908CE85B1F32744800042C1E /* check_icon_green.png */,
+				908CE85D1F32744800042C1E /* X_icon_red.png */,
+				E247FFBD1F206FB500E2A65C /* folder-lightbl-redx.png */,
+				E2B974361F312092007BE00E /* mtrlogo_v8-1.png */,
+				E2840AFD1F3ED3ED00559EF1 /* FAIL.png */,
+				E2840B051F3F98E900559EF1 /* FAIL_UNSELECTED.png */,
+				E2840AEA1F3E9C1B00559EF1 /* NOTES.png */,
+				E2840AEB1F3E9C1B00559EF1 /* PASS.png */,
+				E2840B071F3F98F100559EF1 /* PASS_UNSELECTED.png */,
+				E2840AFB1F3ED3E900559EF1 /* BLOCK.png */,
+				E2840AF31F3EA2B800559EF1 /* PHOTO.png */,
+				E2840AF91F3ECC8200559EF1 /* UPLOAD.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13A342E21F0367E9002EBC92 = {
+			isa = PBXGroup;
+			children = (
+				13A342ED1F0367E9002EBC92 /* Mobile Test Runner for Jama */,
+				13A343021F0367E9002EBC92 /* Mobile Test Runner for JamaTests */,
+				13A3430D1F0367E9002EBC92 /* Mobile Test Runner for JamaUITests */,
+				13A342EC1F0367E9002EBC92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13A342EC1F0367E9002EBC92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13A342EB1F0367E9002EBC92 /* Mobile Test Runner for Jama.app */,
+				13A342FF1F0367E9002EBC92 /* Mobile Test Runner for JamaTests.xctest */,
+				13A3430A1F0367E9002EBC92 /* Mobile Test Runner for JamaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13A342ED1F0367E9002EBC92 /* Mobile Test Runner for Jama */ = {
+			isa = PBXGroup;
+			children = (
+				133971B71F1B437600AB9D30 /* Resources */,
+				13A343201F04C216002EBC92 /* utils */,
+				13A3431F1F04C1FC002EBC92 /* Models */,
+				13A3431E1F04C1E8002EBC92 /* ViewControllers */,
+				13A342EE1F0367E9002EBC92 /* AppDelegate.swift */,
+				13A342F21F0367E9002EBC92 /* Main.storyboard */,
+				13A342F51F0367E9002EBC92 /* Assets.xcassets */,
+				13A342F71F0367E9002EBC92 /* LaunchScreen.storyboard */,
+				13A342FA1F0367E9002EBC92 /* Info.plist */,
+				13A343B01F0F5C6E002EBC92 /* Endpoints.plist */,
+			);
+			path = "Mobile Test Runner for Jama";
+			sourceTree = "<group>";
+		};
+		13A343021F0367E9002EBC92 /* Mobile Test Runner for JamaTests */ = {
+			isa = PBXGroup;
+			children = (
+				13A343591F04C94B002EBC92 /* ViewControllerUnitTests */,
+				13A343581F04C8C5002EBC92 /* utilsUnitTests */,
+				13A343571F04C896002EBC92 /* ModelUnitTests */,
+				13A343051F0367E9002EBC92 /* Info.plist */,
+			);
+			path = "Mobile Test Runner for JamaTests";
+			sourceTree = "<group>";
+		};
+		13A3430D1F0367E9002EBC92 /* Mobile Test Runner for JamaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13A343101F0367E9002EBC92 /* Info.plist */,
+				303AD4641F2994F5000E3988 /* LoginViewControllerUITests.swift */,
+			);
+			path = "Mobile Test Runner for JamaUITests";
+			sourceTree = "<group>";
+		};
+		13A3431E1F04C1E8002EBC92 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				13A343211F04C247002EBC92 /* LoginViewController.swift */,
+				13A343231F04C271002EBC92 /* ProjectListViewController.swift */,
+				133971BA1F1B460F00AB9D30 /* ProjectCollectionViewCell.swift */,
+				13A343251F04C28F002EBC92 /* TestListViewController.swift */,
+				13A343271F04C2B4002EBC92 /* TestStepViewController.swift */,
+				4D15D7D71F2A802F009A26B8 /* TestRunIndexViewController.swift */,
+				133971C21F2C326700AB9D30 /* TestStepTableViewCell.swift */,
+				1379B5161F414E74004E7231 /* TestListTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		13A3431F1F04C1FC002EBC92 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13A3432B1F04C33F002EBC92 /* UserModel.swift */,
+				13A3432D1F04C369002EBC92 /* ProjectListModel.swift */,
+				13A3432F1F04C379002EBC92 /* ProjectModel.swift */,
+				13A343311F04C396002EBC92 /* TestRunListModel.swift */,
+				13A343331F04C3B3002EBC92 /* TestRunModel.swift */,
+				13A343351F04C3EF002EBC92 /* TestStepModel.swift */,
+				13A343371F04C442002EBC92 /* TestPlanListModel.swift */,
+				13A343391F04C454002EBC92 /* TestPlanModel.swift */,
+				13A3433B1F04C48E002EBC92 /* TestCycleListModel.swift */,
+				13A3433D1F04C49F002EBC92 /* TestCycleModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		13A343201F04C216002EBC92 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				90D1E2381F0D787F00D66830 /* MaxTextLength.swift */,
+				13A3433F1F04C564002EBC92 /* RestHelper.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		13A343571F04C896002EBC92 /* ModelUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				13A343411F04C752002EBC92 /* UserModelUnitTest.swift */,
+				13A343431F04C77A002EBC92 /* ProjectListModelUnitTests.swift */,
+				13A343451F04C78F002EBC92 /* ProjectModelUnitTests.swift */,
+				13A343471F04C7A9002EBC92 /* TestRunListModelUnitTests.swift */,
+				13A343491F04C7BE002EBC92 /* TestRunModelUnitTests.swift */,
+				13A3434B1F04C7DE002EBC92 /* TestStepModelUnitTests.swift */,
+				13A3434D1F04C814002EBC92 /* TestPlanListModelUnitTests.swift */,
+				13A3434F1F04C82C002EBC92 /* TestPlanModelUnitTests.swift */,
+				13A343511F04C84B002EBC92 /* TestCycleListModelUnitTests.swift */,
+				13A343531F04C867002EBC92 /* TestCycleModelUnitTests.swift */,
+			);
+			name = ModelUnitTests;
+			sourceTree = "<group>";
+		};
+		13A343581F04C8C5002EBC92 /* utilsUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				13A343551F04C881002EBC92 /* RestHelperUnitTests.swift */,
+			);
+			name = utilsUnitTests;
+			sourceTree = "<group>";
+		};
+		13A343591F04C94B002EBC92 /* ViewControllerUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				13A3435A1F04C96B002EBC92 /* LoginViewControllerUnitTests.swift */,
+				13A3435C1F04CA1E002EBC92 /* ProjectListViewControllerUnitTests.swift */,
+				13A3435E1F04CA38002EBC92 /* TestListViewControllerUnitTests.swift */,
+				13A343601F04CA59002EBC92 /* TestStepViewControllerUnitTests.swift */,
+				130BFF8D1F36C3B2005F1660 /* TestRunIndexViewControllerUnitTests.swift */,
+			);
+			name = ViewControllerUnitTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13A342EA1F0367E9002EBC92 /* Mobile Test Runner for Jama */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A343131F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for Jama" */;
+			buildPhases = (
+				13A342E71F0367E9002EBC92 /* Sources */,
+				13A342E81F0367E9002EBC92 /* Frameworks */,
+				13A342E91F0367E9002EBC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobile Test Runner for Jama";
+			productName = "Mobile Test Runner for Jama";
+			productReference = 13A342EB1F0367E9002EBC92 /* Mobile Test Runner for Jama.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13A342FE1F0367E9002EBC92 /* Mobile Test Runner for JamaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A343161F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for JamaTests" */;
+			buildPhases = (
+				13A342FB1F0367E9002EBC92 /* Sources */,
+				13A342FC1F0367E9002EBC92 /* Frameworks */,
+				13A342FD1F0367E9002EBC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A343011F0367E9002EBC92 /* PBXTargetDependency */,
+			);
+			name = "Mobile Test Runner for JamaTests";
+			productName = "Mobile Test Runner for JamaTests";
+			productReference = 13A342FF1F0367E9002EBC92 /* Mobile Test Runner for JamaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13A343091F0367E9002EBC92 /* Mobile Test Runner for JamaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13A343191F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for JamaUITests" */;
+			buildPhases = (
+				13A343061F0367E9002EBC92 /* Sources */,
+				13A343071F0367E9002EBC92 /* Frameworks */,
+				13A343081F0367E9002EBC92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13A3430C1F0367E9002EBC92 /* PBXTargetDependency */,
+			);
+			name = "Mobile Test Runner for JamaUITests";
+			productName = "Mobile Test Runner for JamaUITests";
+			productReference = 13A3430A1F0367E9002EBC92 /* Mobile Test Runner for JamaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13A342E31F0367E9002EBC92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Jaca;
+				TargetAttributes = {
+					13A342EA1F0367E9002EBC92 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5BL5M2XBM2;
+						ProvisioningStyle = Automatic;
+					};
+					13A342FE1F0367E9002EBC92 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13A342EA1F0367E9002EBC92;
+					};
+					13A343091F0367E9002EBC92 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 13A342EA1F0367E9002EBC92;
+					};
+				};
+			};
+			buildConfigurationList = 13A342E61F0367E9002EBC92 /* Build configuration list for PBXProject "Mobile Test Runner for Jama" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13A342E21F0367E9002EBC92;
+			productRefGroup = 13A342EC1F0367E9002EBC92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13A342EA1F0367E9002EBC92 /* Mobile Test Runner for Jama */,
+				13A342FE1F0367E9002EBC92 /* Mobile Test Runner for JamaTests */,
+				13A343091F0367E9002EBC92 /* Mobile Test Runner for JamaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13A342E91F0367E9002EBC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2840AF41F3EA2B800559EF1 /* PHOTO.png in Resources */,
+				1379B5151F3D8502004E7231 /* small_right_chevron.png in Resources */,
+				309325751F32E1C700561EC4 /* mtrlogo_v8-1.png in Resources */,
+				13A342F91F0367E9002EBC92 /* LaunchScreen.storyboard in Resources */,
+				13A343B11F0F5C6E002EBC92 /* Endpoints.plist in Resources */,
+				E2840AEE1F3E9C1B00559EF1 /* PASS.png in Resources */,
+				E2840B061F3F98E900559EF1 /* FAIL_UNSELECTED.png in Resources */,
+				1379B5141F3D8502004E7231 /* small_down_chevron.png in Resources */,
+				13A342F61F0367E9002EBC92 /* Assets.xcassets in Resources */,
+				E2840AFC1F3ED3E900559EF1 /* BLOCK.png in Resources */,
+				E2840AED1F3E9C1B00559EF1 /* NOTES.png in Resources */,
+				E2840AFE1F3ED3ED00559EF1 /* FAIL.png in Resources */,
+				13A342F41F0367E9002EBC92 /* Main.storyboard in Resources */,
+				E2840AFA1F3ECC8200559EF1 /* UPLOAD.png in Resources */,
+				908CE85E1F32744800042C1E /* check_icon_green.png in Resources */,
+				908CE8601F32744800042C1E /* X_icon_red.png in Resources */,
+				908CE8621F3274EE00042C1E /* empty_icon_grey.png in Resources */,
+				E2840B081F3F98F100559EF1 /* PASS_UNSELECTED.png in Resources */,
+				E247FFBE1F206FB500E2A65C /* folder-lightbl-redx.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A342FD1F0367E9002EBC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A343081F0367E9002EBC92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13A342E71F0367E9002EBC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133971BB1F1B460F00AB9D30 /* ProjectCollectionViewCell.swift in Sources */,
+				13A3433C1F04C48E002EBC92 /* TestCycleListModel.swift in Sources */,
+				4D15D7D81F2A802F009A26B8 /* TestRunIndexViewController.swift in Sources */,
+				13A343281F04C2B4002EBC92 /* TestStepViewController.swift in Sources */,
+				13A343241F04C271002EBC92 /* ProjectListViewController.swift in Sources */,
+				13A3432C1F04C33F002EBC92 /* UserModel.swift in Sources */,
+				13A343341F04C3B3002EBC92 /* TestRunModel.swift in Sources */,
+				13A3433A1F04C454002EBC92 /* TestPlanModel.swift in Sources */,
+				13A343381F04C442002EBC92 /* TestPlanListModel.swift in Sources */,
+				13A343321F04C396002EBC92 /* TestRunListModel.swift in Sources */,
+				90D1E2391F0D787F00D66830 /* MaxTextLength.swift in Sources */,
+				13A343221F04C247002EBC92 /* LoginViewController.swift in Sources */,
+				13A343261F04C28F002EBC92 /* TestListViewController.swift in Sources */,
+				13A343301F04C379002EBC92 /* ProjectModel.swift in Sources */,
+				13A343401F04C564002EBC92 /* RestHelper.swift in Sources */,
+				13A3432E1F04C369002EBC92 /* ProjectListModel.swift in Sources */,
+				13A343361F04C3EF002EBC92 /* TestStepModel.swift in Sources */,
+				133971C31F2C326700AB9D30 /* TestStepTableViewCell.swift in Sources */,
+				13A3433E1F04C49F002EBC92 /* TestCycleModel.swift in Sources */,
+				13A342EF1F0367E9002EBC92 /* AppDelegate.swift in Sources */,
+				1379B5171F414E74004E7231 /* TestListTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A342FB1F0367E9002EBC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13A343441F04C77A002EBC92 /* ProjectListModelUnitTests.swift in Sources */,
+				13A3434C1F04C7DE002EBC92 /* TestStepModelUnitTests.swift in Sources */,
+				13A3434A1F04C7BE002EBC92 /* TestRunModelUnitTests.swift in Sources */,
+				130BFF8E1F36C3B2005F1660 /* TestRunIndexViewControllerUnitTests.swift in Sources */,
+				13A343461F04C78F002EBC92 /* ProjectModelUnitTests.swift in Sources */,
+				13A3434E1F04C814002EBC92 /* TestPlanListModelUnitTests.swift in Sources */,
+				13A343421F04C752002EBC92 /* UserModelUnitTest.swift in Sources */,
+				13A3435B1F04C96B002EBC92 /* LoginViewControllerUnitTests.swift in Sources */,
+				13A343521F04C84B002EBC92 /* TestCycleListModelUnitTests.swift in Sources */,
+				13A343501F04C82C002EBC92 /* TestPlanModelUnitTests.swift in Sources */,
+				13A3435F1F04CA38002EBC92 /* TestListViewControllerUnitTests.swift in Sources */,
+				13A343561F04C881002EBC92 /* RestHelperUnitTests.swift in Sources */,
+				13A343541F04C867002EBC92 /* TestCycleModelUnitTests.swift in Sources */,
+				13A3435D1F04CA1E002EBC92 /* ProjectListViewControllerUnitTests.swift in Sources */,
+				13A343611F04CA59002EBC92 /* TestStepViewControllerUnitTests.swift in Sources */,
+				13A343481F04C7A9002EBC92 /* TestRunListModelUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13A343061F0367E9002EBC92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303AD4651F2994F5000E3988 /* LoginViewControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13A343011F0367E9002EBC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A342EA1F0367E9002EBC92 /* Mobile Test Runner for Jama */;
+			targetProxy = 13A343001F0367E9002EBC92 /* PBXContainerItemProxy */;
+		};
+		13A3430C1F0367E9002EBC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13A342EA1F0367E9002EBC92 /* Mobile Test Runner for Jama */;
+			targetProxy = 13A3430B1F0367E9002EBC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13A342F21F0367E9002EBC92 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A342F31F0367E9002EBC92 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		13A342F71F0367E9002EBC92 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13A342F81F0367E9002EBC92 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13A343111F0367E9002EBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13A343121F0367E9002EBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13A343141F0367E9002EBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5BL5M2XBM2;
+				INFOPLIST_FILE = "Mobile Test Runner for Jama/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jaca;
+				PRODUCT_NAME = $PROJECT_NAME;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		13A343151F0367E9002EBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5BL5M2XBM2;
+				INFOPLIST_FILE = "Mobile Test Runner for Jama/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jaca;
+				PRODUCT_NAME = $PROJECT_NAME;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		13A343171F0367E9002EBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mobile Test Runner for JamaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capstone-team-a.Mobile-Test-Runner-for-JamaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Test Runner for Jama.app/Mobile Test Runner for Jama";
+			};
+			name = Debug;
+		};
+		13A343181F0367E9002EBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mobile Test Runner for JamaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capstone-team-a.Mobile-Test-Runner-for-JamaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobile Test Runner for Jama.app/Mobile Test Runner for Jama";
+			};
+			name = Release;
+		};
+		13A3431A1F0367E9002EBC92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Mobile Test Runner for JamaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capstone-team-a.Mobile-Test-Runner-for-JamaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Mobile Test Runner for Jama";
+			};
+			name = Debug;
+		};
+		13A3431B1F0367E9002EBC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Mobile Test Runner for JamaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.capstone-team-a.Mobile-Test-Runner-for-JamaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Mobile Test Runner for Jama";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13A342E61F0367E9002EBC92 /* Build configuration list for PBXProject "Mobile Test Runner for Jama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A343111F0367E9002EBC92 /* Debug */,
+				13A343121F0367E9002EBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A343131F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for Jama" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A343141F0367E9002EBC92 /* Debug */,
+				13A343151F0367E9002EBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A343161F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for JamaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A343171F0367E9002EBC92 /* Debug */,
+				13A343181F0367E9002EBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13A343191F0367E9002EBC92 /* Build configuration list for PBXNativeTarget "Mobile Test Runner for JamaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A3431A1F0367E9002EBC92 /* Debug */,
+				13A3431B1F0367E9002EBC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13A342E31F0367E9002EBC92 /* Project object */;
+}
